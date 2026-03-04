@@ -1,0 +1,167 @@
+.hero-section-container {
+  position: relative;
+  .header {
+    display: flex;
+    margin: 50px;
+  }
+  .hero-section {
+    position: relative;
+    height: 99.5vh;
+    background-position: center;
+    color: white;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    object-fit: cover;
+  }
+  .hero-content {
+    text-align: center;
+    .title {
+      font-size: 5rem;
+      font-weight: bold;
+    }
+  }
+
+  .learn-more {
+    color: #ffffffde;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .top-pbackground {
+    width: 100vw;
+    height: 100%;
+    max-height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    display: block;
+    margin: 0;
+  }
+
+  ////
+  /* 按钮基础样式 */
+  .custom-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin: 0 auto;
+    padding: 5px 11px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    background-color: #f9fafb69;
+    border: 2px solid #f9fafb00;
+    border-radius: 9999px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    z-index: 10;
+  }
+
+  /* 按钮悬停样式 */
+  .custom-button:hover {
+    color: #f9fafb;
+  }
+
+  .custom-button::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: -100%;
+    background-color: #e30613;
+    transition: all 0.7s ease;
+    z-index: -1;
+    border-radius: 9999px;
+    transform: scale(1);
+  }
+
+  .custom-button:hover::before {
+    left: 0;
+    transform: scale(1.5);
+  }
+
+  /* 图标样式 */
+  .button-icon {
+    width: 12px;
+    height: 12px;
+    border: 1px solid #374151;
+    border-radius: 9999px;
+    padding: 4px;
+    background-color: transparent;
+    transition: all 0.3s ease;
+    transform: rotate(45deg); /* 初始状态为 0 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .custom-button:hover .button-icon {
+    rotate: 45deg; /* 鼠标悬停后旋转 45 度 */
+    background-color: #f9fafb;
+    border-color: transparent; /* 隐藏边框而不是移除，防止重绘 */
+  }
+
+  /* 图标路径样式 */
+  .icon-path {
+    fill: #1f2937;
+    transition: fill 0.3s ease;
+  }
+
+  .custom-button:hover .icon-path {
+    fill: #1f2937;
+  }
+
+  .ch {
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    margin-right: -10px;
+    margin-top: -15px;
+    position: relative;
+    z-index: 100;
+    background: #000;
+  }
+  .en {
+    width: 22px;
+    height: 22px;
+    line-height: 22px;
+    text-align: center;
+    border: 1px solid #000;
+    color: #000;
+  }
+  @media (max-width: 768px) {
+    .header {
+      display: inline;
+    }
+    .toPath {
+      display: inline-block;
+    }
+    .carousel {
+      width: 100%;
+      margin: 0;
+      border: unset;
+    }
+    .custom-button {
+      margin: 1vh 0 1vh 2vh;
+    }
+    .ChEn {
+      margin: 3vh 0 0 2vh;
+    }
+    .logo {
+      img {
+        width: 50vw;
+      }
+    }
+    .hero-content {
+      .title {
+        font-size: 3rem;
+      }
+    }
+  }
+}

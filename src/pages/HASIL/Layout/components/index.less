@@ -1,0 +1,65 @@
+.componentIndex {
+  position: relative;
+  z-index: 10000;
+  .carousel {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    margin: 0 3vw 2vw 0;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transition: 0.3s all;
+    border-radius: 2px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+  }
+
+  .carousel-item {
+    background-size: cover;
+    background-position: center;
+    width: 33.33%;
+    cursor: pointer;
+    transition: 0.3s all;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 2vw;
+    text-align: center;
+  }
+
+  .active {
+    position: relative;
+    z-index: 100;
+    margin-top: -35px;
+    scale: 1.2;
+    img {
+      border: 1px solid #fff;
+    }
+  }
+  .carousel-controls {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .carousel-controls button {
+    background-color: #007aff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  .carousel-controls button:hover {
+    background-color: #005bb5;
+  }
+
+  @media (max-width: 768px) {
+    .carousel {
+      width: 100%;
+    }
+  }
+}
