@@ -51,6 +51,7 @@ const HeroSection = ({ backgroundImage, children, nextSlide, t, i18n }) => {
         <div className="header">
           <div className="logo">
             <img src={logoRed} alt="logo" />
+            <div className="logoCn">杭州何析科技有限公司</div>
           </div>
           <Space className="toPath" style={{ marginLeft: "auto" }} size={30}>
             <div className="learn-more">

@@ -3,6 +3,7 @@ import logoRed from "../../../assets/LOGO-red.png";
 import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";
 import picture from "../../../assets/Picture1.png";
+import image7 from "../../../assets/7.jpg";
 
 export default function Index() {
   const { t } = useTranslation();
@@ -31,12 +32,12 @@ export default function Index() {
       <div
         style={{
           textAlign: "center",
-          height: "50vh",
+          height: "80vh",
           overflow: "hidden",
           paddingBottom: "5vh",
         }}
       >
-        <img style={{ maxHeight: "100%" }} src={picture} alt="" />
+        <img style={{ maxHeight: "100%" }} src={image7} alt="" />
       </div>
     </div>
   );

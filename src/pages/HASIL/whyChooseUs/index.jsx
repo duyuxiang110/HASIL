@@ -6,6 +6,10 @@ import new_blockshow2_2x from "../../../assets/new_blockshow2_2x.jpg";
 import china from "../../../assets/china_2x.jpg";
 import DeWatermark_ from "../../../assets/DeWatermark_.png";
 import DeWatermark_2 from "../../../assets/DeWatermark_2.png";
+import image4 from "../../../assets/4.png";
+import image1 from "../../../assets/1.jpg";
+import image5 from "../../../assets/5.png";
+import image6 from "../../../assets/6.jpg";
 
 export default function Index() {
   const { t } = useTranslation();
@@ -22,7 +26,7 @@ export default function Index() {
       <div className="container">
         <div className="content-wrapper">
           <div className="image-section">
-            <img src={new_blockshow2_2x} alt="Construction Image" />
+            <img src={image4} alt="Construction Image" />
           </div>
           <div className="text-section">
             <p className="title">
@@ -53,7 +57,7 @@ export default function Index() {
             </p>
           </div>
           <div className="image-section2">
-            <img src={china} alt="Construction Image" />
+            <img src={image1} alt="Construction Image" />
           </div>
         </div>
       </div>
@@ -72,14 +76,14 @@ export default function Index() {
             </p>
           </div>
           <div className="image-section2">
-            <img src={DeWatermark_2} alt="Construction Image" />
+            <img src={image5} alt="Construction Image" />
           </div>
         </div>
       </div>
       <div className="container">
         <div className="content-wrapper">
           <div className="image-section">
-            <img src={DeWatermark_} alt="Construction Image" />
+            <img src={image6} alt="Construction Image" />
           </div>
           <div className="text-section">
             <p className="title">

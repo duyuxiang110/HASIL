@@ -96,6 +96,15 @@ const Index = () => {
         <div>
           <MailOutlined />
           <span>hasil@hasil-engineering.com</span>
+          <div>
+            <a
+              style={{ color: "#707070" }}
+              target="_blank"
+              href="https://beian.miit.gov.cn"
+            >
+              浙ICP备2025155023号-1
+            </a>
+          </div>
         </div>
         {/* <div>
           <EnvironmentOutlined />

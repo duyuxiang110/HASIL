@@ -6,7 +6,6 @@ import WhyChooseUs from "./pages/HASIL/whyChooseUs";
 import ContactUs from "./pages/HASIL/contactUs";
 import AboutUs from "./pages/HASIL/aboutUs";
 
-
 const routes = [
   {
     path: "/",
@@ -48,7 +47,6 @@ const routes = [
     ),
     nodeRef: createRef(),
   },
-
 ];
 
 export default routes;

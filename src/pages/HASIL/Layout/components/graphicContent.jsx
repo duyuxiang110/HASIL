@@ -6,12 +6,16 @@ import new_blockshow3_2x from "../../../../assets/new_blockshow3_2x.jpg";
 import new_blockshow1_2x_min from "../../../../assets/new_blockshow1_2x_min.jpg";
 import new_blockshow2_2x_min from "../../../../assets/new_blockshow2_2x_min.jpg";
 import new_blockshow3_2x_min from "../../../../assets/new_blockshow3_2x_min.jpg";
+import image1 from "../../../../assets/1.jpg";
+import image2 from "../../../../assets/2.jpg";
+import image3 from "../../../../assets/3.png";
+
 import OptimizedImage from "../../../../components/OptimizedImage";
 
 const data = [
   {
-    image: new_blockshow1_2x,
-    minImage: new_blockshow1_2x_min,
+    image: image1,
+    minImage: image1,
     title: "工程与建设服务",
     length: 3,
     texts: [
@@ -34,8 +38,8 @@ const data = [
     ],
   },
   {
-    image: new_blockshow2_2x,
-    minImage: new_blockshow2_2x_min,
+    image: image2,
+    minImage: image2,
     title: "供应链优化与管理",
     length: 2,
     texts: [
@@ -50,8 +54,8 @@ const data = [
     ],
   },
   {
-    image: new_blockshow3_2x,
-    minImage: new_blockshow3_2x_min,
+    image: image3,
+    minImage: image3,
     title: "环境可持续发展服务",
     length: 1,
     texts: [
